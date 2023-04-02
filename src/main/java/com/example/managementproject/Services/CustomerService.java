@@ -41,4 +41,9 @@ public class CustomerService {
         return customersRepository.findById(id).get();
     }
 
+    //Fetch by RegNo
+    public Customers FetchByRegNo(String regNo){
+        return customersRepository.getByRegNCustomers(regNo);
+    }
+
 }
