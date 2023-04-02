@@ -27,13 +27,18 @@ public class CustomerService {
     }
 
     // Update
-    public void updateCustomer() {
-        //
+    public void updateCustomer(Customers customers) {
+        customersRepository.save(customers);
     }
 
     // Delete
-    public void deleteCustomer() {
-        //
+    public void deleteCustomerById(Integer id) {
+        customersRepository.deleteById(id);
+    }
+
+    //Fetch by ID
+    public Customers getByCustomerId(Integer id){
+        return customersRepository.findById(id).get();
     }
 
 }
