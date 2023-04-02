@@ -14,24 +14,26 @@ public class CustomerService {
     @Autowired
     private CustomersRepository customersRepository;
 
-    //Create
+    // Create
     public void createCustomer(Customers customers) {
         customersRepository.save(customers);
     }
 
-    //Read
-    public List<Customers> getAllCustomers(){
-        return customersRepository.findAll();
+    // Read
+    public List<Customers> getAllCustomers() {
+        List<Customers> customerList = customersRepository.findAll();
+        return customerList;
+
     }
 
-    //Update
+    // Update
     public void updateCustomer() {
         //
     }
 
-    //Delete
+    // Delete
     public void deleteCustomer() {
         //
     }
-    
+
 }

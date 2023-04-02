@@ -17,25 +17,25 @@ public class Customers {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
 
-    @Column(name = "regNo")
+    @Column(name = "reg_no")
     private String regNo;
 
-    @Column(name = "firstName")
+    @Column(name = "first_name")
     private String firstName;
 
-    @Column(name = "lastName")
+    @Column(name = "last_name")
     private String lastName;
 
-    @Column(name = "emailId")
+    @Column(name = "email_id")
     private String emailId;
 
-    @Column(name = "phoneNo")
+    @Column(name = "phone_no")
     private String phoneNo;
 
     @Column(name = "dob")
     private Date dob;
 
-    @Column(name = "createdOn")
+    @Column(name = "created_on")
     private Date createdOn;
 
     public Customers() {
